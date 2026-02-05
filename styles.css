@@ -59,27 +59,151 @@ body {
 
 .nav-btn {
     padding: 10px 28px;
-    background-color: #4A90E2;
-    border: none;
     border-radius: 8px;
     cursor: pointer;
     font-size: 14px;
     font-weight: 500;
-    color: #ffffff;
     transition: all 0.3s ease;
     min-width: 90px;
+    border: none;
+}
+
+/* Variante 1: Filled Blue (Primary) */
+.btn-1 {
+    background-color: #4A90E2;
+    color: #ffffff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.nav-btn:hover {
+.btn-1:hover {
     background-color: #357ABD;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
     transform: translateY(-1px);
 }
 
-.nav-btn:active {
+.btn-1:active {
     transform: translateY(0);
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Variante 2: Smooth Blue (Light fill) */
+.btn-2 {
+    background-color: #E3F2FD;
+    color: #1976D2;
+    border: none;
+}
+
+.btn-2:hover {
+    background-color: #BBDEFB;
+    transform: translateY(-1px);
+}
+
+.btn-2:active {
+    transform: translateY(0);
+}
+
+/* Variante 3: Ghost Blue (Transparent with border) */
+.btn-3 {
+    background-color: transparent;
+    color: #4A90E2;
+    border: 2px solid #4A90E2;
+}
+
+.btn-3:hover {
+    background-color: rgba(74, 144, 226, 0.1);
+    transform: translateY(-1px);
+}
+
+.btn-3:active {
+    transform: translateY(0);
+}
+
+/* Variante 4: Raised Blue (With shadow) */
+.btn-4 {
+    background-color: #E3F2FD;
+    color: #1976D2;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.btn-4:hover {
+    background-color: #BBDEFB;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+}
+
+.btn-4:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+/* Variante 5: Filled Red (Warning) */
+.btn-5 {
+    background-color: #E53935;
+    color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.btn-5:hover {
+    background-color: #C62828;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    transform: translateY(-1px);
+}
+
+.btn-5:active {
+    transform: translateY(0);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Variante 6: Filled Green (Positive) */
+.btn-6 {
+    background-color: #43A047;
+    color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.btn-6:hover {
+    background-color: #388E3C;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    transform: translateY(-1px);
+}
+
+.btn-6:active {
+    transform: translateY(0);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Variante 7: Filled Orange (Attention) */
+.btn-7 {
+    background-color: #FB8C00;
+    color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.btn-7:hover {
+    background-color: #F57C00;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    transform: translateY(-1px);
+}
+
+.btn-7:active {
+    transform: translateY(0);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Variante 8: Smooth Red (Light fill) */
+.btn-8 {
+    background-color: #FFEBEE;
+    color: #C62828;
+    border: none;
+}
+
+.btn-8:hover {
+    background-color: #FFCDD2;
+    transform: translateY(-1px);
+}
+
+.btn-8:active {
+    transform: translateY(0);
 }
 
 /* BODY */
@@ -193,6 +317,10 @@ body {
         padding: 8px 16px;
         font-size: 12px;
         min-width: 70px;
+    }
+    
+    .btn-3 {
+        border-width: 1px;
     }
 
     .image-placeholder {
