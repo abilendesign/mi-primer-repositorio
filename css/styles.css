@@ -30,7 +30,7 @@ body {
 /* ===== HEADER ===== */
 .header {
   width: 100%;
-  background-color: var(--color-bg-primary);
+  background-color: #F2F2F2;
   padding: 15px 0;
   box-shadow: var(--shadow-small);
   position: sticky;
@@ -69,7 +69,7 @@ body {
   margin-left: auto;
 }
 
-/* Aplicar estilo de botón del UX Kit a los botones de navegación */
+/* Aplicar estilo Outline Button a los botones de navegación */
 .nav-btn {
   padding: 10px 24px;
   border-radius: var(--radius-medium);
@@ -77,26 +77,26 @@ body {
   font-size: var(--font-size-16);
   font-weight: var(--font-weight-medium);
   transition: all var(--transition-normal);
-  border: none;
-  background-color: var(--color-primary);
-  color: white;
-  box-shadow: var(--shadow-small);
+  background-color: var(--color-bg-primary);
+  color: var(--color-primary);
+  border: 2px solid var(--color-primary);
+  box-shadow: none;
   font-family: var(--font-primary);
   text-decoration: none;
   display: inline-block;
 }
 
 .nav-btn:hover {
-  background-color: var(--color-secondary);
-  box-shadow: var(--shadow-medium);
-  transform: translateY(-2px);
+  background-color: var(--color-bg-primary);
+  color: var(--color-secondary);
+  border-color: var(--color-secondary);
 }
 
 .nav-btn:active,
 .nav-btn.active {
-  background-color: var(--color-tertiary);
-  transform: translateY(0);
-  box-shadow: var(--shadow-small);
+  background-color: var(--color-bg-primary);
+  color: var(--color-tertiary);
+  border-color: var(--color-tertiary);
 }
 
 /* ===== MAIN CONTENT ===== */
