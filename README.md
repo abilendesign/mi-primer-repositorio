@@ -29,15 +29,62 @@ El proyecto incluye un sistema de diseño completo:
 - **Pesos**: Light (300), Regular (400), Medium (500), SemiBold (600), Bold (700)
 
 ### Paleta de Colores
-- **Primary**: #116ACC (Azul principal)
-- **Secondary 1**: #1B2233 (Azul oscuro)
-- **Secondary 2**: #B3CEE2 (Azul claro)
-- **Secondary 3**: #D9DDE7 (Gris azulado)
-- **Secondary 4**: #FD4E5D (Rojo/Rosa)
-- **State Colors**: Info, Success, Warning, Error
+
+#### Colores principales
+- **Color principal**: `#EB4133` (Rojo principal)
+- **Color secundario** (hover): `#F07A6F` (Rojo claro)
+- **Color terciario** (pressed): `#A42E23` (Rojo oscuro)
+- **Color disabled**: `#F2F2F2` (Gris claro)
+
+#### Colores de fondo
+- **Fondo principal**: `#FFFFFF` (Blanco)
+- **Fondo secundario**: `#F2F2F2` (Gris claro)
+
+#### State Colors (complementarios)
+- **Success**: `#27AE60` (Verde)
+- **Warning**: `#E2B93B` (Amarillo)
+- **Error**: `#EB4133` (Rojo)
+- **Info**: `#2F80ED` (Azul)
+
+### Reglas de Botones
+
+#### Padding
+- **Izquierda/Derecha**: 1.5 × tamaño de la fuente
+- **Arriba/Abajo**: 1 × tamaño de la fuente
+
+Ejemplos:
+- Small (14px): `padding: 14px 21px`
+- Normal (16px): `padding: 16px 24px`
+- Medium (18px): `padding: 18px 27px`
+
+#### Botón de ancho completo
+- Izquierda/Derecha: determinado por el ancho del dispositivo
+- Arriba/Abajo: 1 × tamaño de la fuente
+
+#### Iconos
+- Siempre a la izquierda respetando las reglas de relleno
+
+### Estilos de Botones
+
+#### Normal Buttons (`.btn-primary`)
+- **Normal**: fondo `#EB4133`, texto `#FFFFFF`
+- **Hover**: fondo `#F07A6F`, texto `#FFFFFF`
+- **Pressed**: fondo `#A42E23`, texto `#FFFFFF`
+- **Disabled**: fondo `#F2F2F2`, texto `#FFFFFF`
+
+#### Icon Text Buttons (`.btn-icon-text`)
+- Icono siempre a la izquierda (color `#FFFFFF`)
+- Texto a la derecha (color `#FFFFFF`)
+- Mismos estados de color que Normal Buttons
+
+#### Outline Buttons (`.btn-outline`)
+- **Normal**: fondo `#FFFFFF`, texto `#EB4133`, borde 2px `#EB4133`
+- **Hover**: fondo `#FFFFFF`, texto `#F07A6F`, borde 2px `#F07A6F`
+- **Pressed**: fondo `#FFFFFF`, texto `#A42E23`, borde 2px `#A42E23`
+- **Disabled**: fondo `#FFFFFF`, texto `#F2F2F2`, borde 2px `#F2F2F2`
 
 ### Componentes
-- **Botones**: 8 variantes (Normal, Icon Text, Outline, Tags, Text, Icon, Dots, Secondary)
+- **Botones**: Normal, Icon Text, Outline, Tags, Text, Icon, Dots
 - **Text Fields**: Inputs con estados (default, focus, hover, error, success)
 - **Dropdowns**: Selectores personalizados
 - **Tooltips**: Información contextual
