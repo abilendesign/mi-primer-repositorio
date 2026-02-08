@@ -16,104 +16,129 @@
   gap: var(--spacing-8);
   font-weight: var(--font-weight-medium);
   outline: none;
+  border-radius: var(--radius-medium);
 }
 
-/* Button Sizes */
+/* Button Sizes - Regla: Padding L/R = 1.5x font-size, Padding T/B = 1x font-size */
 .btn-small {
-  padding: 8px 20px;
   font-size: var(--font-size-14);
-  border-radius: var(--radius-medium);
+  padding: 14px 21px; /* 14px = 1x, 21px = 1.5x */
 }
 
 .btn-normal {
-  padding: 10px 24px;
   font-size: var(--font-size-16);
-  border-radius: var(--radius-medium);
+  padding: 16px 24px; /* 16px = 1x, 24px = 1.5x */
 }
 
 .btn-medium {
-  padding: 12px 28px;
-  font-size: var(--font-size-16);
-  border-radius: var(--radius-medium);
+  font-size: var(--font-size-18);
+  padding: 18px 27px; /* 18px = 1x, 27px = 1.5x */
 }
 
-/* Button Variants - Primary Color */
+/* Button Full Width */
+.btn-full {
+  width: 100%;
+  font-size: var(--font-size-16);
+  padding: 16px 24px;
+}
 
-/* Normal Variant */
+/* ===== NORMAL BUTTONS ===== */
+
 .btn-primary {
   background-color: var(--color-primary);
-  color: white;
+  color: var(--color-text-white);
   box-shadow: var(--shadow-small);
 }
 
 .btn-primary:hover {
-  background-color: #E88B88;
+  background-color: var(--color-secondary);
   box-shadow: var(--shadow-medium);
   transform: translateY(-2px);
 }
 
 .btn-primary:active,
 .btn-primary:focus {
-  background-color: #B8423E;
+  background-color: var(--color-tertiary);
   box-shadow: var(--shadow-small);
   transform: translateY(0);
 }
 
 .btn-primary:disabled {
-  background-color: #D9DDE7;
-  color: #999;
+  background-color: var(--color-disabled);
+  color: var(--color-text-white);
   cursor: not-allowed;
   transform: none;
 }
 
-/* Icon Text Variant */
-.btn-primary-icon-text {
+/* ===== ICON TEXT BUTTONS ===== */
+/* Icono siempre a la izquierda, texto a la derecha */
+
+.btn-icon-text {
   background-color: var(--color-primary);
-  color: white;
+  color: var(--color-text-white);
   box-shadow: var(--shadow-small);
+  gap: var(--spacing-8);
 }
 
-.btn-primary-icon-text:hover {
-  background-color: #E88B88;
+.btn-icon-text svg,
+.btn-icon-text i {
+  color: var(--color-text-white);
+  order: -1; /* Asegura que el icono esté siempre a la izquierda */
+}
+
+.btn-icon-text:hover {
+  background-color: var(--color-secondary);
   box-shadow: var(--shadow-medium);
   transform: translateY(-2px);
 }
 
-.btn-primary-icon-text:active {
-  background-color: #B8423E;
+.btn-icon-text:active,
+.btn-icon-text:focus {
+  background-color: var(--color-tertiary);
   transform: translateY(0);
 }
 
-/* Outline Variant */
+.btn-icon-text:disabled {
+  background-color: var(--color-disabled);
+  color: var(--color-text-white);
+  cursor: not-allowed;
+}
+
+/* ===== OUTLINE BUTTONS ===== */
+
 .btn-outline {
-  background-color: transparent;
+  background-color: var(--color-bg-primary);
   color: var(--color-primary);
   border: 2px solid var(--color-primary);
   box-shadow: none;
 }
 
 .btn-outline:hover {
-  background-color: rgba(217, 83, 79, 0.1);
-  border-color: #E88B88;
-  color: #E88B88;
+  background-color: var(--color-bg-primary);
+  color: var(--color-secondary);
+  border-color: var(--color-secondary);
 }
 
-.btn-outline:active {
-  background-color: rgba(217, 83, 79, 0.2);
-  border-color: #B8423E;
-  color: #B8423E;
+.btn-outline:active,
+.btn-outline:focus {
+  background-color: var(--color-bg-primary);
+  color: var(--color-tertiary);
+  border-color: var(--color-tertiary);
 }
 
 .btn-outline:disabled {
-  border-color: #D9DDE7;
-  color: #999;
-  background-color: transparent;
+  background-color: var(--color-bg-primary);
+  color: var(--color-disabled);
+  border-color: var(--color-disabled);
+  cursor: not-allowed;
 }
 
-/* Tags Variant */
+/* ===== OTROS ESTILOS DE BOTONES ===== */
+
+/* Tags Button */
 .btn-tag {
   background-color: var(--color-primary);
-  color: white;
+  color: var(--color-text-white);
   border-radius: 20px;
   padding: 6px 16px;
   font-size: var(--font-size-14);
@@ -121,15 +146,15 @@
 }
 
 .btn-tag:hover {
-  background-color: #E88B88;
+  background-color: var(--color-secondary);
   box-shadow: var(--shadow-medium);
 }
 
 .btn-tag:active {
-  background-color: #B8423E;
+  background-color: var(--color-tertiary);
 }
 
-/* Text Only Variant */
+/* Text Only Button */
 .btn-text {
   background-color: transparent;
   color: var(--color-primary);
@@ -138,19 +163,19 @@
 }
 
 .btn-text:hover {
-  background-color: rgba(217, 83, 79, 0.1);
-  color: #E88B88;
+  background-color: rgba(235, 65, 51, 0.1);
+  color: var(--color-secondary);
 }
 
 .btn-text:active {
-  background-color: rgba(217, 83, 79, 0.2);
-  color: #B8423E;
+  background-color: rgba(235, 65, 51, 0.2);
+  color: var(--color-tertiary);
 }
 
-/* Icon Only Variant */
+/* Icon Only Button */
 .btn-icon {
   background-color: var(--color-primary);
-  color: white;
+  color: var(--color-text-white);
   padding: 10px;
   width: 40px;
   height: 40px;
@@ -159,17 +184,17 @@
 }
 
 .btn-icon:hover {
-  background-color: #E88B88;
+  background-color: var(--color-secondary);
   box-shadow: var(--shadow-medium);
   transform: translateY(-2px);
 }
 
 .btn-icon:active {
-  background-color: #B8423E;
+  background-color: var(--color-tertiary);
   transform: translateY(0);
 }
 
-/* Dots Variant */
+/* Dots Button */
 .btn-dots {
   background-color: transparent;
   color: var(--color-primary);
@@ -180,29 +205,11 @@
 }
 
 .btn-dots:hover {
-  background-color: rgba(217, 83, 79, 0.1);
+  background-color: rgba(235, 65, 51, 0.1);
 }
 
 .btn-dots:active {
-  background-color: rgba(217, 83, 79, 0.2);
-}
-
-/* Secondary Button */
-.btn-secondary {
-  background-color: var(--color-secondary-4);
-  color: white;
-  box-shadow: var(--shadow-small);
-}
-
-.btn-secondary:hover {
-  background-color: #E63849;
-  box-shadow: var(--shadow-medium);
-  transform: translateY(-2px);
-}
-
-.btn-secondary:active {
-  background-color: #CC2C3A;
-  transform: translateY(0);
+  background-color: rgba(235, 65, 51, 0.2);
 }
 
 /* ===== TEXT FIELDS ===== */
@@ -217,6 +224,7 @@
   transition: all var(--transition-normal);
   outline: none;
   width: 100%;
+  background-color: var(--color-bg-primary);
 }
 
 .input-field::placeholder {
@@ -225,15 +233,15 @@
 
 .input-field:focus {
   border-color: var(--color-primary);
-  box-shadow: 0 0 0 3px rgba(217, 83, 79, 0.1);
+  box-shadow: 0 0 0 3px rgba(235, 65, 51, 0.1);
 }
 
 .input-field:hover:not(:focus):not(:disabled) {
-  border-color: #B3CEE2;
+  border-color: var(--color-secondary);
 }
 
 .input-field:disabled {
-  background-color: #F7F9FD;
+  background-color: var(--color-bg-secondary);
   border-color: #D9DDE7;
   color: #999;
   cursor: not-allowed;
@@ -247,7 +255,7 @@
   border-color: var(--color-success);
 }
 
-/* Input with Label */
+/* Input Group */
 .input-group {
   display: flex;
   flex-direction: column;
@@ -257,7 +265,7 @@
 .input-label {
   font-size: var(--font-size-14);
   font-weight: var(--font-weight-medium);
-  color: var(--color-secondary-1);
+  color: var(--color-text-primary);
 }
 
 /* Input with Icon */
@@ -316,8 +324,8 @@
 
 .tooltip-content {
   visibility: hidden;
-  background-color: var(--color-secondary-1);
-  color: white;
+  background-color: var(--color-text-primary);
+  color: var(--color-text-white);
   text-align: center;
   padding: 8px 12px;
   border-radius: var(--radius-small);
@@ -335,4 +343,11 @@
 .tooltip:hover .tooltip-content {
   visibility: visible;
   opacity: 1;
+}
+
+/* Textarea */
+.textarea {
+  resize: vertical;
+  min-height: 120px;
+  font-family: var(--font-primary);
 }

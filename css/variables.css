@@ -34,29 +34,33 @@
   --line-height-22: 22px;
   --line-height-20: 20px;
 
-  /* ===== BRAND COLORS ===== */
-  --color-primary: #D9534F;
-  --color-secondary-1: #1B2233;
-  --color-secondary-2: #E88B88;
-  --color-secondary-3: #D9DDE7;
-  --color-secondary-4: #B8423E;
+  /* ===== PALETA DE COLORES ===== */
+  /* Color principal */
+  --color-primary: #EB4133;
 
-  /* ===== GRAY COLORS ===== */
-  --color-black: #2F80ED;
-  --color-gray-1: #2F80ED;
-  --color-gray-2: #2F80ED;
-  --color-gray-3: #2F80ED;
-  --color-gray-4: #2F80ED;
-  --color-gray-5: #2F80ED;
-  --color-gray-6: #F7F9FD;
-  --color-gray-7: #2F80ED;
-  --color-white: #2F80ED;
+  /* Color secundario (hover) */
+  --color-secondary: #F07A6F;
 
-  /* ===== STATE COLORS ===== */
-  --color-info: #2F80ED;
+  /* Color terciario (pressed) */
+  --color-tertiary: #A42E23;
+
+  /* Color disabled */
+  --color-disabled: #F2F2F2;
+
+  /* Colores de fondo */
+  --color-bg-primary: #FFFFFF;
+  --color-bg-secondary: #F2F2F2;
+
+  /* Colores de texto */
+  --color-text-primary: #1B2233;
+  --color-text-white: #FFFFFF;
+  --color-text-gray: #666666;
+
+  /* Colores de estado (mantenemos para compatibilidad) */
   --color-success: #27AE60;
   --color-warning: #E2B93B;
-  --color-error: #EB5757;
+  --color-error: #EB4133;
+  --color-info: #2F80ED;
 
   /* ===== SPACING ===== */
   --spacing-2: 2px;
