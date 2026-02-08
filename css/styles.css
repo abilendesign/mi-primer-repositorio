@@ -88,14 +88,14 @@ body {
 }
 
 .nav-btn:hover {
-  background-color: #0D5AAD;
+  background-color: #E88B88;
   box-shadow: var(--shadow-medium);
   transform: translateY(-2px);
 }
 
 .nav-btn:active,
 .nav-btn.active {
-  background-color: #094885;
+  background-color: #B8423E;
   transform: translateY(0);
   box-shadow: var(--shadow-small);
 }
@@ -110,7 +110,7 @@ body {
 .hero-section {
   width: 100%;
   min-height: 60vh;
-  background: linear-gradient(135deg, var(--color-primary) 0%, #0D5AAD 100%);
+  background: linear-gradient(135deg, var(--color-primary) 0%, #B8423E 100%);
   display: flex;
   align-items: center;
   justify-content: center;

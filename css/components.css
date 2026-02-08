@@ -47,14 +47,14 @@
 }
 
 .btn-primary:hover {
-  background-color: #0D5AAD;
+  background-color: #E88B88;
   box-shadow: var(--shadow-medium);
   transform: translateY(-2px);
 }
 
 .btn-primary:active,
 .btn-primary:focus {
-  background-color: #094885;
+  background-color: #B8423E;
   box-shadow: var(--shadow-small);
   transform: translateY(0);
 }
@@ -74,13 +74,13 @@
 }
 
 .btn-primary-icon-text:hover {
-  background-color: #0D5AAD;
+  background-color: #E88B88;
   box-shadow: var(--shadow-medium);
   transform: translateY(-2px);
 }
 
 .btn-primary-icon-text:active {
-  background-color: #094885;
+  background-color: #B8423E;
   transform: translateY(0);
 }
 
@@ -93,15 +93,15 @@
 }
 
 .btn-outline:hover {
-  background-color: rgba(17, 106, 204, 0.1);
-  border-color: #0D5AAD;
-  color: #0D5AAD;
+  background-color: rgba(217, 83, 79, 0.1);
+  border-color: #E88B88;
+  color: #E88B88;
 }
 
 .btn-outline:active {
-  background-color: rgba(17, 106, 204, 0.2);
-  border-color: #094885;
-  color: #094885;
+  background-color: rgba(217, 83, 79, 0.2);
+  border-color: #B8423E;
+  color: #B8423E;
 }
 
 .btn-outline:disabled {
@@ -121,12 +121,12 @@
 }
 
 .btn-tag:hover {
-  background-color: #0D5AAD;
+  background-color: #E88B88;
   box-shadow: var(--shadow-medium);
 }
 
 .btn-tag:active {
-  background-color: #094885;
+  background-color: #B8423E;
 }
 
 /* Text Only Variant */
@@ -138,13 +138,13 @@
 }
 
 .btn-text:hover {
-  background-color: rgba(17, 106, 204, 0.1);
-  color: #0D5AAD;
+  background-color: rgba(217, 83, 79, 0.1);
+  color: #E88B88;
 }
 
 .btn-text:active {
-  background-color: rgba(17, 106, 204, 0.2);
-  color: #094885;
+  background-color: rgba(217, 83, 79, 0.2);
+  color: #B8423E;
 }
 
 /* Icon Only Variant */
@@ -159,13 +159,13 @@
 }
 
 .btn-icon:hover {
-  background-color: #0D5AAD;
+  background-color: #E88B88;
   box-shadow: var(--shadow-medium);
   transform: translateY(-2px);
 }
 
 .btn-icon:active {
-  background-color: #094885;
+  background-color: #B8423E;
   transform: translateY(0);
 }
 
@@ -180,11 +180,11 @@
 }
 
 .btn-dots:hover {
-  background-color: rgba(17, 106, 204, 0.1);
+  background-color: rgba(217, 83, 79, 0.1);
 }
 
 .btn-dots:active {
-  background-color: rgba(17, 106, 204, 0.2);
+  background-color: rgba(217, 83, 79, 0.2);
 }
 
 /* Secondary Button */
@@ -225,7 +225,7 @@
 
 .input-field:focus {
   border-color: var(--color-primary);
-  box-shadow: 0 0 0 3px rgba(17, 106, 204, 0.1);
+  box-shadow: 0 0 0 3px rgba(217, 83, 79, 0.1);
 }
 
 .input-field:hover:not(:focus):not(:disabled) {
