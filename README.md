@@ -16,39 +16,7 @@ primer-repo/
 ├── js/                    # JavaScript
 │   └── script.js          # Scripts principales
 ├── assets/                # Recursos (imágenes, iconos, fuentes)
-│   └── logo.png           # Logo del header (agregar manualmente)
 └── docs/                  # Documentación del proyecto
-```
-
-## 🖼️ Agregar el Logo
-
-El proyecto está configurado para usar un logo en el header. Para agregarlo:
-
-### Opción 1: Guardar manualmente
-1. Guarda tu imagen de logo en la carpeta `assets/`
-2. Nómbrala exactamente como `logo.png`
-3. Formato recomendado: PNG con fondo transparente
-4. El logo se ajustará automáticamente a 50px de altura
-
-### Opción 2: Usar otro nombre o formato
-Si tu logo tiene otro nombre (ejemplo: `mi-logo.svg`):
-
-1. Guarda la imagen en `assets/`
-2. Edita el archivo `index.html` línea 16:
-   ```html
-   <img src="assets/logo.png" alt="Logo" class="logo-img">
-   ```
-   Cambia `logo.png` por el nombre de tu archivo
-
-### Opción 3: Usando Git
-```bash
-# 1. Copia tu logo a la carpeta assets
-cp /ruta/a/tu/logo.png assets/logo.png
-
-# 2. Agrega y confirma los cambios
-git add assets/logo.png
-git commit -m "Agregar logo al proyecto"
-git push origin main
 ```
 
 ## UX Kit incluido
