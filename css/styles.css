@@ -30,7 +30,7 @@ body {
 /* ===== HEADER ===== */
 .header {
   width: 100%;
-  background-color: var(--color-secondary-1);
+  background-color: var(--color-bg-primary);
   padding: 15px 0;
   box-shadow: var(--shadow-small);
   position: sticky;
