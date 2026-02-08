@@ -1,0 +1,185 @@
+/* =========================================
+   ESTILOS PRINCIPALES
+   ========================================= */
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-primary);
+  background-color: #f5f5f5;
+  min-height: 100vh;
+  width: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+/* ===== HEADER ===== */
+.header {
+  width: 100%;
+  background-color: var(--color-secondary-1);
+  padding: 15px 0;
+  box-shadow: var(--shadow-small);
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+/* Logo circular */
+.logo-circle {
+  width: 50px;
+  height: 50px;
+  background-color: var(--color-primary);
+  border: 3px solid white;
+  border-radius: var(--radius-circle);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  box-shadow: var(--shadow-medium);
+}
+
+/* Botones de navegación */
+.nav-buttons {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-left: auto;
+}
+
+/* Aplicar estilo de botón del UX Kit a los botones de navegación */
+.nav-btn {
+  padding: 10px 24px;
+  border-radius: var(--radius-medium);
+  cursor: pointer;
+  font-size: var(--font-size-16);
+  font-weight: var(--font-weight-medium);
+  transition: all var(--transition-normal);
+  border: none;
+  background-color: var(--color-primary);
+  color: white;
+  box-shadow: var(--shadow-small);
+  font-family: var(--font-primary);
+}
+
+.nav-btn:hover {
+  background-color: #0D5AAD;
+  box-shadow: var(--shadow-medium);
+  transform: translateY(-2px);
+}
+
+.nav-btn:active {
+  background-color: #094885;
+  transform: translateY(0);
+  box-shadow: var(--shadow-small);
+}
+
+/* ===== MAIN CONTENT ===== */
+.body {
+  flex: 1;
+  width: 100%;
+  background-color: #e0e0e0;
+  min-height: calc(100vh - 200px);
+  padding: 0;
+  margin: 0;
+  display: block;
+}
+
+.content-area {
+  width: 100%;
+  margin: 0;
+  position: relative;
+}
+
+.image-placeholder {
+  width: 100%;
+  height: calc(100vh - 200px);
+  min-height: 60vh;
+  background-color: #e0e0e0;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0;
+  position: relative;
+}
+
+.image-label {
+  position: relative;
+  z-index: 1;
+  color: #999;
+  font-size: var(--font-size-18);
+  font-weight: var(--font-weight-medium);
+}
+
+/* ===== FOOTER ===== */
+.footer {
+  width: 100%;
+  background-color: var(--color-secondary-1);
+  padding: 20px 0;
+  text-align: center;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.footer-text {
+  color: white;
+  font-size: var(--font-size-16);
+  font-weight: var(--font-weight-medium);
+  letter-spacing: 0.5px;
+  margin: 0;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .header-container {
+    padding: 0 15px;
+    flex-wrap: wrap;
+  }
+
+  .logo-circle {
+    width: 40px;
+    height: 40px;
+  }
+
+  .nav-buttons {
+    gap: 8px;
+  }
+
+  .nav-btn {
+    padding: 8px 16px;
+    font-size: var(--font-size-14);
+  }
+
+  .image-placeholder {
+    height: calc(100vh - 150px);
+    min-height: 50vh;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-buttons {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .nav-btn {
+    font-size: var(--font-size-13);
+    padding: 6px 12px;
+  }
+}

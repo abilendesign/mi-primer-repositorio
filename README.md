@@ -1,13 +1,63 @@
 # Mi Primer Repositorio
 
 Página web estática lista para publicar en GitHub Pages y Vercel.
+Construida con un UX Kit completo que incluye sistema de diseño, componentes y estilos reutilizables.
 
 ## Estructura del Proyecto
 
-- `index.html` - Página principal
-- `styles.css` - Estilos CSS
-- `script.js` - JavaScript básico
-- `vercel.json` - Configuración para Vercel
+```
+primer-repo/
+├── index.html              # Página principal
+├── vercel.json            # Configuración para Vercel
+├── css/                   # Estilos CSS organizados
+│   ├── variables.css      # Variables CSS del UX Kit (colores, tipografía, espaciado)
+│   ├── components.css     # Componentes reutilizables (botones, inputs, etc.)
+│   └── styles.css         # Estilos principales de la página
+├── js/                    # JavaScript
+│   └── script.js          # Scripts principales
+├── assets/                # Recursos (imágenes, iconos, fuentes)
+└── docs/                  # Documentación del proyecto
+```
+
+## UX Kit incluido
+
+El proyecto incluye un sistema de diseño completo:
+
+### Tipografía
+- **Font Family**: Ubuntu (Google Fonts)
+- **Tamaños**: 32px, 24px, 20px, 22px, 18px, 16px, 14.5px, 14px, 13px
+- **Pesos**: Light (300), Regular (400), Medium (500), SemiBold (600), Bold (700)
+
+### Paleta de Colores
+- **Primary**: #116ACC (Azul principal)
+- **Secondary 1**: #1B2233 (Azul oscuro)
+- **Secondary 2**: #B3CEE2 (Azul claro)
+- **Secondary 3**: #D9DDE7 (Gris azulado)
+- **Secondary 4**: #FD4E5D (Rojo/Rosa)
+- **State Colors**: Info, Success, Warning, Error
+
+### Componentes
+- **Botones**: 8 variantes (Normal, Icon Text, Outline, Tags, Text, Icon, Dots, Secondary)
+- **Text Fields**: Inputs con estados (default, focus, hover, error, success)
+- **Dropdowns**: Selectores personalizados
+- **Tooltips**: Información contextual
+
+## Cómo usar los componentes
+
+### Botones
+```html
+<button class="btn btn-primary btn-normal">Botón Primary</button>
+<button class="btn btn-outline btn-normal">Botón Outline</button>
+<button class="btn btn-tag">Tag</button>
+```
+
+### Inputs
+```html
+<div class="input-group">
+  <label class="input-label">Nombre</label>
+  <input type="text" class="input-field" placeholder="Ingresa tu nombre">
+</div>
+```
 
 ## Publicar en GitHub Pages
 

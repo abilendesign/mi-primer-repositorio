@@ -1,0 +1,171 @@
+/* =========================================
+   UX KIT - VARIABLES CSS
+   ========================================= */
+
+/* ===== TIPOGRAFÍA ===== */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+:root {
+  /* Font Family */
+  --font-primary: 'Ubuntu', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Cantarell, sans-serif;
+
+  /* Font Sizes */
+  --font-size-32: 32px;
+  --font-size-24: 24px;
+  --font-size-20: 20px;
+  --font-size-22: 22px;
+  --font-size-18: 18px;
+  --font-size-16: 16px;
+  --font-size-14-5: 14.5px;
+  --font-size-14: 14px;
+  --font-size-13: 13px;
+
+  /* Font Weights */
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  /* Line Heights */
+  --line-height-36: 36px;
+  --line-height-28: 28px;
+  --line-height-24: 24px;
+  --line-height-22: 22px;
+  --line-height-20: 20px;
+
+  /* ===== BRAND COLORS ===== */
+  --color-primary: #116ACC;
+  --color-secondary-1: #1B2233;
+  --color-secondary-2: #B3CEE2;
+  --color-secondary-3: #D9DDE7;
+  --color-secondary-4: #FD4E5D;
+
+  /* ===== GRAY COLORS ===== */
+  --color-black: #2F80ED;
+  --color-gray-1: #2F80ED;
+  --color-gray-2: #2F80ED;
+  --color-gray-3: #2F80ED;
+  --color-gray-4: #2F80ED;
+  --color-gray-5: #2F80ED;
+  --color-gray-6: #F7F9FD;
+  --color-gray-7: #2F80ED;
+  --color-white: #2F80ED;
+
+  /* ===== STATE COLORS ===== */
+  --color-info: #2F80ED;
+  --color-success: #27AE60;
+  --color-warning: #E2B93B;
+  --color-error: #EB5757;
+
+  /* ===== SPACING ===== */
+  --spacing-2: 2px;
+  --spacing-4: 4px;
+  --spacing-8: 8px;
+  --spacing-12: 12px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-32: 32px;
+
+  /* ===== BORDER RADIUS ===== */
+  --radius-small: 4px;
+  --radius-medium: 8px;
+  --radius-large: 12px;
+  --radius-circle: 50%;
+
+  /* ===== SHADOWS ===== */
+  --shadow-small: 0 2px 4px rgba(0, 0, 0, 0.1);
+  --shadow-medium: 0 4px 8px rgba(0, 0, 0, 0.15);
+  --shadow-large: 0 6px 12px rgba(0, 0, 0, 0.2);
+
+  /* ===== TRANSITIONS ===== */
+  --transition-fast: 0.2s ease;
+  --transition-normal: 0.3s ease;
+  --transition-slow: 0.5s ease;
+}
+
+/* ===== TYPOGRAPHY CLASSES ===== */
+.text-32-bold {
+  font-size: var(--font-size-32);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-36);
+}
+
+.text-32-semibold {
+  font-size: var(--font-size-32);
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--line-height-36);
+}
+
+.text-24-medium {
+  font-size: var(--font-size-24);
+  font-weight: var(--font-weight-medium);
+  line-height: var(--line-height-28);
+}
+
+.text-20-semibold {
+  font-size: var(--font-size-20);
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--line-height-24);
+}
+
+.text-22-medium {
+  font-size: var(--font-size-22);
+  font-weight: var(--font-weight-medium);
+  line-height: var(--line-height-22);
+}
+
+.text-18-light {
+  font-size: var(--font-size-18);
+  font-weight: var(--font-weight-light);
+  line-height: var(--line-height-22);
+}
+
+.text-16-regular {
+  font-size: var(--font-size-16);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-24);
+}
+
+.text-16-semibold {
+  font-size: var(--font-size-16);
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--line-height-20);
+}
+
+.text-16-medium {
+  font-size: var(--font-size-16);
+  font-weight: var(--font-weight-medium);
+  line-height: var(--line-height-20);
+}
+
+.text-16-light {
+  font-size: var(--font-size-16);
+  font-weight: var(--font-weight-light);
+  line-height: var(--line-height-20);
+}
+
+.text-14-5-medium {
+  font-size: var(--font-size-14-5);
+  font-weight: var(--font-weight-medium);
+  line-height: var(--line-height-20);
+}
+
+.text-14-regular {
+  font-size: var(--font-size-14);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-20);
+}
+
+.text-13-medium {
+  font-size: var(--font-size-13);
+  font-weight: var(--font-weight-medium);
+  line-height: var(--line-height-20);
+}
+
+.text-13-semibold {
+  font-size: var(--font-size-13);
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--line-height-20);
+}
