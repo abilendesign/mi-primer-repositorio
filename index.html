@@ -16,25 +16,125 @@
                 <!-- Logo circular -->
             </div>
             <nav class="nav-buttons">
-                <button class="nav-btn btn-1">inicio 1</button>
-                <button class="nav-btn btn-2">texto 2</button>
-                <button class="nav-btn btn-3">texto 3</button>
-                <button class="nav-btn btn-4">texto 4</button>
-                <button class="nav-btn btn-5">texto 5</button>
-                <button class="nav-btn btn-6">texto 6</button>
-                <button class="nav-btn btn-7">texto 7</button>
-                <button class="nav-btn btn-8">texto 8</button>
+                <a href="#servicios" class="nav-btn">Servicios</a>
+                <a href="#portafolios" class="nav-btn">Portafolios</a>
+                <a href="#sobre-mi" class="nav-btn">Sobre mí</a>
+                <a href="#contacto" class="nav-btn">Contacto</a>
             </nav>
         </div>
     </header>
 
-    <!-- BODY -->
-    <main class="body">
-        <div class="content-area">
-            <div class="image-placeholder">
-                <span class="image-label">imagen 1</span>
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+
+        <!-- HERO SECTION -->
+        <section id="hero" class="hero-section">
+            <div class="hero-container">
+                <h1 class="text-32-bold hero-title">Bienvenido a mi Portfolio</h1>
+                <p class="text-18-light hero-subtitle">Diseño y desarrollo de experiencias digitales</p>
             </div>
-        </div>
+        </section>
+
+        <!-- SERVICIOS SECTION -->
+        <section id="servicios" class="section">
+            <div class="section-container">
+                <h2 class="text-32-bold section-title">Servicios</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <h3 class="text-20-semibold">Diseño UX/UI</h3>
+                        <p class="text-16-regular">Creación de interfaces intuitivas y atractivas</p>
+                    </div>
+                    <div class="service-card">
+                        <h3 class="text-20-semibold">Desarrollo Web</h3>
+                        <p class="text-16-regular">Sitios web modernos y responsivos</p>
+                    </div>
+                    <div class="service-card">
+                        <h3 class="text-20-semibold">Branding</h3>
+                        <p class="text-16-regular">Identidad visual para tu marca</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PORTAFOLIOS SECTION -->
+        <section id="portafolios" class="section section-alt">
+            <div class="section-container">
+                <h2 class="text-32-bold section-title">Portafolios</h2>
+                <div class="portfolio-grid">
+                    <div class="portfolio-item">
+                        <div class="portfolio-image">
+                            <span class="image-label">Proyecto 1</span>
+                        </div>
+                        <h3 class="text-20-semibold">Nombre del Proyecto</h3>
+                        <p class="text-16-regular">Descripción breve del proyecto</p>
+                    </div>
+                    <div class="portfolio-item">
+                        <div class="portfolio-image">
+                            <span class="image-label">Proyecto 2</span>
+                        </div>
+                        <h3 class="text-20-semibold">Nombre del Proyecto</h3>
+                        <p class="text-16-regular">Descripción breve del proyecto</p>
+                    </div>
+                    <div class="portfolio-item">
+                        <div class="portfolio-image">
+                            <span class="image-label">Proyecto 3</span>
+                        </div>
+                        <h3 class="text-20-semibold">Nombre del Proyecto</h3>
+                        <p class="text-16-regular">Descripción breve del proyecto</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SOBRE MI SECTION -->
+        <section id="sobre-mi" class="section">
+            <div class="section-container">
+                <h2 class="text-32-bold section-title">Sobre mí</h2>
+                <div class="about-content">
+                    <div class="about-image">
+                        <span class="image-label">Tu foto</span>
+                    </div>
+                    <div class="about-text">
+                        <p class="text-18-light">
+                            Soy un diseñador y desarrollador apasionado por crear experiencias digitales excepcionales.
+                            Con experiencia en UX/UI y desarrollo web, ayudo a marcas y empresas a destacar en el mundo digital.
+                        </p>
+                        <p class="text-16-regular">
+                            Mi enfoque combina creatividad, funcionalidad y atención al detalle para entregar
+                            proyectos que no solo se ven bien, sino que también funcionan perfectamente.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACTO SECTION -->
+        <section id="contacto" class="section section-alt">
+            <div class="section-container">
+                <h2 class="text-32-bold section-title">Contacto</h2>
+                <div class="contact-content">
+                    <p class="text-18-light contact-intro">
+                        ¿Tienes un proyecto en mente? ¡Me encantaría escucharte!
+                    </p>
+                    <form class="contact-form">
+                        <div class="input-group">
+                            <label class="input-label">Nombre</label>
+                            <input type="text" class="input-field" placeholder="Tu nombre">
+                        </div>
+                        <div class="input-group">
+                            <label class="input-label">Email</label>
+                            <input type="email" class="input-field" placeholder="tu@email.com">
+                        </div>
+                        <div class="input-group">
+                            <label class="input-label">Mensaje</label>
+                            <textarea class="input-field textarea" rows="5" placeholder="Cuéntame sobre tu proyecto"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-medium">Enviar mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
     </main>
 
     <!-- FOOTER -->
