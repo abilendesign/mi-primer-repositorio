@@ -33,9 +33,6 @@ body {
   background-color: #F2F2F2;
   padding: 15px 0;
   box-shadow: var(--shadow-small);
-  position: sticky;
-  top: 0;
-  z-index: 1000;
 }
 
 .header-container {
