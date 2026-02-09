@@ -157,14 +157,17 @@ body {
 
 .hero-card:nth-child(1) {
   color: #EB4133;
+  border-top: 4px solid #EB4133;
 }
 
 .hero-card:nth-child(2) {
   color: #FAB80A;
+  border-top: 4px solid #FAB80A;
 }
 
 .hero-card:nth-child(3) {
   color: #4385F3;
+  border-top: 4px solid #4385F3;
 }
 
 .hero-card:hover {
