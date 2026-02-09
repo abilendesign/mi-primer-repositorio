@@ -32,7 +32,8 @@ body {
   width: 100%;
   background-color: #FFFFFF;
   padding: 15px 0;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  border-bottom: 4px solid #EB4133;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
 .header-container {
@@ -75,8 +76,8 @@ body {
   font-weight: var(--font-weight-medium);
   transition: all var(--transition-normal);
   background-color: var(--color-bg-primary);
-  color: var(--color-primary);
-  border: 2px solid var(--color-primary);
+  color: #A42E23;
+  border: 2px solid #A42E23;
   box-shadow: none;
   font-family: var(--font-primary);
   text-decoration: none;
