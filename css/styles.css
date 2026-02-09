@@ -76,8 +76,8 @@ body {
   font-weight: var(--font-weight-medium);
   transition: all var(--transition-normal);
   background-color: var(--color-bg-primary);
-  color: #A42E23;
-  border: 2px solid #A42E23;
+  color: var(--color-primary);
+  border: 2px solid var(--color-primary);
   box-shadow: none;
   font-family: var(--font-primary);
   text-decoration: none;
