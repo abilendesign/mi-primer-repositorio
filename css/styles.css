@@ -119,11 +119,44 @@ body {
   text-align: center;
 }
 
+.hero-subtitle {
+  font-size: var(--font-size-16);
+  font-weight: var(--font-weight-regular);
+  color: white;
+  margin: 0 0 20px 0;
+}
+
 .hero-title {
-  font-size: 48px;
+  font-size: 64px;
   font-weight: var(--font-weight-bold);
   color: white;
-  margin: 0;
+  margin: 0 0 40px 0;
+  line-height: 1.2;
+}
+
+.hero-cards {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.hero-card {
+  background-color: white;
+  color: #A42E23;
+  font-size: var(--font-size-18);
+  font-weight: var(--font-weight-bold);
+  padding: 20px 40px;
+  border-radius: var(--radius-medium);
+  box-shadow: var(--shadow-medium);
+  transition: all var(--transition-normal);
+}
+
+.hero-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-large);
 }
 
 /* ===== SECTIONS ===== */
