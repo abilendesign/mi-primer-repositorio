@@ -144,14 +144,15 @@ body {
 }
 
 .hero-card {
-  background-color: white;
+  background: white;
   color: #A42E23;
-  font-size: var(--font-size-18);
-  font-weight: var(--font-weight-bold);
-  padding: 20px 40px;
+  font-size: var(--font-size-20);
+  font-weight: var(--font-weight-semibold);
+  padding: 40px 30px;
   border-radius: var(--radius-medium);
   box-shadow: var(--shadow-medium);
   transition: all var(--transition-normal);
+  text-align: center;
 }
 
 .hero-card:hover {
