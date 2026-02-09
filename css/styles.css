@@ -146,13 +146,14 @@ body {
 .hero-card {
   background: white;
   color: #A42E23;
-  font-size: var(--font-size-20);
+  font-size: var(--font-size-24);
   font-weight: var(--font-weight-semibold);
   padding: 40px 30px;
   border-radius: var(--radius-medium);
   box-shadow: var(--shadow-medium);
   transition: all var(--transition-normal);
   text-align: center;
+  text-transform: uppercase;
 }
 
 .hero-card:hover {
