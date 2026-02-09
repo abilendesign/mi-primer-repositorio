@@ -67,33 +67,36 @@ body {
   margin-left: auto;
 }
 
-/* Aplicar estilo Primary Button a los botones de navegación */
+/* Aplicar estilo Soft Button a los botones de navegación */
 .nav-btn {
   padding: 10px 24px;
-  border-radius: var(--radius-medium);
+  border-radius: 25px;
   cursor: pointer;
   font-size: var(--font-size-16);
   font-weight: var(--font-weight-medium);
   transition: all var(--transition-normal);
-  background-color: var(--color-primary);
-  color: var(--color-text-white);
+  background-color: rgba(235, 65, 51, 0.1);
+  color: var(--color-primary);
   border: none;
-  box-shadow: var(--shadow-small);
+  box-shadow: none;
   font-family: var(--font-primary);
   text-decoration: none;
   display: inline-block;
+  position: relative;
 }
 
 .nav-btn:hover {
-  background-color: var(--color-secondary);
-  box-shadow: var(--shadow-medium);
-  transform: translateY(-2px);
+  background-color: var(--color-primary);
+  color: white;
+  box-shadow: var(--shadow-small);
+  transform: translateY(-1px);
 }
 
 .nav-btn:active,
 .nav-btn.active {
   background-color: var(--color-tertiary);
-  box-shadow: var(--shadow-small);
+  color: white;
+  box-shadow: none;
   transform: translateY(0);
 }
 
@@ -561,8 +564,35 @@ body {
   transition: all var(--transition-fast);
 }
 
-.portfolio-item:hover .portfolio-tag {
+/* Tags específicos con colores */
+.tag-diseno {
+  background-color: rgba(250, 184, 10, 0.15);
+  color: #FAB80A;
+}
+
+.tag-uiux {
+  background-color: rgba(235, 65, 51, 0.15);
+  color: #EB4133;
+}
+
+.tag-marca {
+  background-color: rgba(67, 133, 243, 0.15);
+  color: #4385F3;
+}
+
+/* Hover states para tags específicos */
+.portfolio-item:hover .tag-diseno {
+  background-color: #FAB80A;
+  color: white;
+}
+
+.portfolio-item:hover .tag-uiux {
   background-color: #EB4133;
+  color: white;
+}
+
+.portfolio-item:hover .tag-marca {
+  background-color: #4385F3;
   color: white;
 }
 
