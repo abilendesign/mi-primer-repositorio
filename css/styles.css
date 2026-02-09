@@ -106,32 +106,32 @@ body {
 .hero-section {
   width: 100%;
   min-height: 60vh;
-  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-tertiary) 100%);
+  background: #FFFFFF;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 60px 20px;
-  color: white;
 }
 
 .hero-container {
-  max-width: 1200px;
+  max-width: 800px;
   text-align: center;
 }
 
 .hero-subtitle {
   font-size: var(--font-size-16);
   font-weight: var(--font-weight-regular);
-  color: white;
+  color: #A42E23;
   margin: 0 0 20px 0;
 }
 
 .hero-title {
   font-size: 64px;
   font-weight: var(--font-weight-bold);
-  color: white;
+  color: #A42E23;
   margin: 0 0 40px 0;
   line-height: 1.2;
+  text-transform: uppercase;
 }
 
 .hero-cards {
