@@ -62,6 +62,10 @@
   --color-error: #EB4133;
   --color-info: #2F80ED;
 
+  /* Colores de variantes */
+  --color-blue-variant: #4385F3;
+  --color-yellow-variant: #FAB80A;
+
   /* ===== SPACING ===== */
   --spacing-2: 2px;
   --spacing-4: 4px;
