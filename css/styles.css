@@ -264,7 +264,7 @@ body {
 /* ===== SERVICIOS ===== */
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 30px;
   margin-top: 40px;
 }
@@ -275,22 +275,23 @@ body {
   border-radius: var(--radius-medium);
   box-shadow: var(--shadow-medium);
   transition: all var(--transition-normal);
-  text-align: center;
+  text-align: left;
   position: relative;
-  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 450px;
 }
 
-.service-card::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 4px;
-  background: linear-gradient(90deg, #EB4133, #F07A6F);
-  transform: scaleX(0);
-  transform-origin: left;
-  transition: transform var(--transition-normal);
+.service-card:nth-child(1) {
+  border-top: 4px solid #EB4133;
+}
+
+.service-card:nth-child(2) {
+  border-top: 4px solid #FAB80A;
+}
+
+.service-card:nth-child(3) {
+  border-top: 4px solid #4385F3;
 }
 
 .service-card:hover {
@@ -298,17 +299,83 @@ body {
   box-shadow: var(--shadow-large);
 }
 
-.service-card:hover::before {
-  transform: scaleX(1);
-}
-
-.service-card h3 {
-  color: var(--color-primary);
+.service-title {
   margin-bottom: 15px;
+  text-transform: uppercase;
+  font-weight: var(--font-weight-bold);
 }
 
-.service-card p {
+.service-card:nth-child(1) .service-title {
+  color: #EB4133;
+}
+
+.service-card:nth-child(2) .service-title {
+  color: #FAB80A;
+}
+
+.service-card:nth-child(3) .service-title {
+  color: #4385F3;
+}
+
+.service-description {
   color: #666;
+  margin-bottom: 25px;
+  line-height: 1.6;
+}
+
+.service-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 auto 0;
+  flex-grow: 1;
+}
+
+.service-list li {
+  color: #666;
+  font-size: var(--font-size-16);
+  padding: 10px 0;
+  padding-left: 25px;
+  position: relative;
+}
+
+.service-list li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  font-weight: var(--font-weight-bold);
+}
+
+.service-card:nth-child(1) .service-list li::before {
+  color: #EB4133;
+}
+
+.service-card:nth-child(2) .service-list li::before {
+  color: #FAB80A;
+}
+
+.service-card:nth-child(3) .service-list li::before {
+  color: #4385F3;
+}
+
+.service-price {
+  margin-top: 25px;
+  padding-top: 20px;
+  border-top: 2px solid #f0f0f0;
+  font-size: var(--font-size-24);
+  font-weight: var(--font-weight-bold);
+  text-align: center;
+}
+
+.service-card:nth-child(1) .service-price {
+  color: #EB4133;
+}
+
+.service-card:nth-child(2) .service-price {
+  color: #FAB80A;
+}
+
+.service-card:nth-child(3) .service-price {
+  color: #4385F3;
 }
 
 /* ===== PORTAFOLIOS ===== */
