@@ -106,6 +106,26 @@ Ejemplos:
 </div>
 ```
 
+## Guías de Diseño Frontend
+
+Este proyecto sigue principios de diseño frontend de alta calidad para crear interfaces distintivas y de grado profesional. Ver [indicaciones.md](indicaciones.md) para la guía completa.
+
+### Principios clave:
+- **Dirección estética intencional**: Cada decisión visual tiene un propósito claro
+- **Código de calidad de producción**: Funcional, accesible y mantenible
+- **Tipografía distintiva**: Ubuntu como fuente principal con pesos cuidadosamente seleccionados
+- **Paleta cohesiva**: Sistema de colores basado en rojo (#EB4133) con variantes complementarias
+- **Movimiento con propósito**: Transiciones y animaciones sutiles que mejoran la experiencia
+- **Composición espacial**: Jerarquía clara y uso intencional del espacio negativo
+- **Detalles visuales**: Sombras, bordes y texturas que crean profundidad y atmósfera
+
+### Estándares implementados:
+- Accesibilidad (navegación por teclado, estados de foco, contraste)
+- Diseño responsivo intencional
+- Variables CSS para consistencia visual
+- Componentes reutilizables y bien estructurados
+- Animaciones que respetan `prefers-reduced-motion`
+
 ## Publicar en GitHub Pages
 
 1. Haz commit y push de tus cambios:
