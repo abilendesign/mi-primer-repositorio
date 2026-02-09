@@ -30,9 +30,9 @@ body {
 /* ===== HEADER ===== */
 .header {
   width: 100%;
-  background-color: #F2F2F2;
+  background-color: #FFFFFF;
   padding: 15px 0;
-  box-shadow: var(--shadow-small);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
 .header-container {
@@ -105,14 +105,14 @@ body {
 /* ===== HERO SECTION ===== */
 .hero-section {
   width: 100%;
-  min-height: 60vh;
+  min-height: 80vh;
   background-color: #FFFFFF;
   background-image: radial-gradient(circle, #d0d0d0 1.5px, transparent 1.5px);
   background-size: 25px 25px;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 60px 20px;
+  padding: 80px 20px;
 }
 
 .hero-container {
